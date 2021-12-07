@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/body_fat.css">
+    <title>Body Fat</title>
+</head>
+<body>
+    
+    <nav>
+        <div id="menu">
+            <img src="image/menu.png" onclick="menu_show()">
+            <a href="index.html"><img src="image/home.png" id="home"></a>
+    </div>
+
+    <div id="topics" style="margin-top: -400px;">
+        <a href="portal_login.html"><li>Portal</li></a>
+        <a href="learn.html"><li>Aprendizagem</li></a>
+        <a href="calculators.html"><li>Calculadoras</li></a>
+        <a href="about.html"><li>Sobre</li></a>
+    </div>
+
+    </nav>
+
+    <div id="content" style="margin-top: 0;">
+        <hr>
+
+        <div id="block">
+            <label>Sexo</label>
+            <select id="gender">
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+            </select>
+            <label>Qual é sua altura?(cm)</label>
+            <input type="number" id="height">
+            <label>Qual a circunfência na região da barriga?(cm)</label>
+            <input type="number" id="circumference">
+            <img src="image/body_fat.jpg">
+            <button onclick="bf_calculator()">Calcular</button>
+        </div>
+        <div id="result"></div>
+
+    </div>
+
+
+
+    <footer>
+        <p>Licenciado 2021</p>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/bf_calculator.js"></script>
+</body>
+</html>

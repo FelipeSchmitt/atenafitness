@@ -1,0 +1,51 @@
+#grid #box{
+    text-align: center;
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 24px;
+    display: block;
+    margin: auto;
+    background-color: rgb(238, 232, 183);
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 50px;
+} 
+#grid #box:hover{
+    box-shadow: 0 0 5px black;
+    cursor: pointer;
+}
+#grid #box img{
+    display: block;
+    margin: auto;
+}
+
+@media screen and (max-width: 60em){
+
+    #grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    
+    }
+    #grid #box{
+        width: 60%;
+        margin-bottom: 30px;
+    }
+    #grid #box img{
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 60em){
+
+    #grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    
+    }
+    #grid #box{
+        width: 60%;
+    }
+    #grid #box img{
+        width: 90%;
+    }
+    
+}

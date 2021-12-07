@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/answer.css">
+    <title>Atena Responde</title>
+</head>
+<body>
+    <nav>
+        <div id="menu">
+            <img src="image/menu.png" onclick="menu_show()">
+            <a href="index.html"><img src="image/home.png" id="home"></a>
+    </div>
+
+    <div id="topics" style="margin-top: -400px;">
+        <a href="portal_login.html"><li>Portal</li></a>
+        <a href="learn.html"><li>Aprendizagem</li></a>
+        <a href="calculators.html"><li>Calculadoras</li></a>
+        <a href="about.html"><li>Sobre</li></a>
+    </div>
+    </nav>
+
+    <div id="content" style="margin-top: 0;">
+
+<h1>Perguntas e Respostas!</h1>
+
+<hr>
+
+<div id="answer_session">
+
+<div id="question_box_line">
+    <div id="question_box">
+        <p>Faça uma Pergunta:</p>
+        <div id="title_box"><input type="text" placeholder="Titulo" maxlength="64"></div>
+        <div id="description_box"><textarea name="description" id="" cols="30" rows="10" maxlength="2048" placeholder="Descrição"></textarea></div>
+        <div id="button_action"><button>Postar</button></div>
+    </div>
+</div>
+    
+
+
+
+</div>
+
+
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/answer.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/portal.css">
+    <title>Portal Login/Cadastro</title>
+</head>
+<body>
+    
+    <nav>
+        <div id="menu">
+            <img src="image/menu.png" onclick="menu_show()">
+            <a href="index.html"><img src="image/home.png" id="home"></a>
+    </div>
+
+    <div id="topics" style="margin-top: -400px;">
+        <a href="portal_login.html"><li>Portal</li></a>
+        <a href="learn.html"><li>Aprendizagem</li></a>
+        <a href="calculators.html"><li>Calculadoras</li></a>
+        <a href="about.html"><li>Sobre</li></a>
+    </div>
+
+    </nav>
+
+<div id="content" style="margin-top: 0;">
+
+
+    <div id="user_icon">
+        <img src="image/user_icon.png" alt="">
+    
+    </div>
+
+    <div id="display">
+        <div id="title">Portal de Acesso</div>
+        
+        <div id="campos_acesso">
+            <label for="">Email:</label>
+            <input type="text" id="email">
+            <label for="">Senha:</label>
+            <div id="section_password">
+            <input type="password" id="password">
+            <input type="checkbox" id="show" onclick="showhide()">
+            </div>
+        </div>
+
+        <div id="button">
+            <button onclick="login()">Login</button></a>
+        </div>
+
+        <div id="alternar_portal">
+            <a href="#">Login</a> / <a href="portal_cadastro.html">Cadastro</a>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+<footer>
+    <p>Licenciado 2021</p>
+</footer>
+
+
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/login.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"crossorigin="anonymous"></script>
+<script src="https://unpkg.com/sweetalert2@9/dist/sweetalert2.all.js"></script>
+</html>

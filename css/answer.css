@@ -1,0 +1,153 @@
+h1{
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: white;
+    padding: 8px;
+    font-family: 'Sansita Swashed', cursive;
+    background-color: darkred;
+    width: 50%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    border-radius: 8px;
+}
+#answer_session{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#question_box_line{
+    padding: 0;
+    border-style: solid;
+    width: 30%;
+    display: block;
+    margin: auto;
+    border-radius: 7px;
+
+}
+
+#question_box{
+    width: 100%;
+    display: block;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#question_box p{
+    font-size: 24px;
+    font-family: Helvetica, sans-serif;
+    color: gold;
+    background-color: black;
+    padding: 10px;
+    margin: 0;
+}
+#question_box input{
+    font-size: 20px;
+    margin-left: 10%;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    border-radius: 8px;
+    width: 80%;
+    outline: 0;
+    margin: 20px;
+
+}
+#question_box input:focus{
+    border-color:  orange;
+}
+
+#question_box #description_box textarea{
+    width: 80%;
+    font-size: 20px;
+}
+
+#question_box #description_box textarea:focus{
+    border-color:  orange;
+    outline: 0;
+}
+
+#question_box #button_action button{
+    background-color: rgba(255, 255, 0, 0.884);
+    border-style: none;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 200px;
+    height: 40px;
+    transition: 0.5s;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#question_box #button_action button:hover{
+    width: 250px;
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 0 0 15px #363636;
+}
+
+#box{
+    width: 50%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 5em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#box #user_box{
+    font-size: 20px;
+    margin-left: 20px;
+}
+#box #user_box img{
+    height: 60px;
+    border-radius: 200px;
+}
+#box #title_box{
+    margin: 20px;
+    font-size: 20px;
+    font-family: 'Roboto';
+    color: #363636;
+}
+#box #date_box{
+    float: right;
+    margin-right: 10%;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+#box #answer_button{
+    margin-left: 50px;
+}
+#box #answer_button button{
+    background-color: rgba(255, 255, 0, 0.884);
+    border-style: none;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 200px;
+    height: 40px;
+    transition: 0.5s;
+}
+#box #answer_button button:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 0 0 15px #363636;
+}
+
+@media screen and (max-width: 60em){
+
+#question_box_line{
+    width: 90%;
+}
+
+#box{
+    width: 90%;
+}
+}

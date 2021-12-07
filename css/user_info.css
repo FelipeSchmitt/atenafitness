@@ -1,0 +1,156 @@
+body{
+
+}
+
+#title{
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    background-color: darkred;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10%;
+}
+
+#divisao1{
+    width: 100%;
+    border-right-style: groove;
+    display: block;
+    margin: auto;
+}
+#divisao1 label{
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    margin: 15px;
+}
+#divisao1 input{
+    width: 60%;
+    height: 30px;
+    font-size: 20px;
+    outline: none;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-radius: 5px;
+}
+
+#divisao1 input:focus{
+    border-color: orangered;
+}
+
+#divisao1 select{
+    width: 60%;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#divisao1 select:focus{
+    border-color: orangered;
+}
+
+#divisao2{
+    width: 100%;
+}
+
+#divisao2 #user_photo{
+    margin-top: 10%;
+}
+
+#divisao2 #user_photo img{
+    width: 30%;
+    display: block;
+    margin: auto;
+    border-style: solid;
+    border-radius: 7px;
+}
+
+#biografia{
+    margin-bottom: 15%;
+}
+
+#divisao2 h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#divisao2 textarea{
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    margin: auto;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 5px;
+    width: 80%;
+}
+
+#conclusao button{
+    display: block;
+    margin: auto;
+    background-color: yellow;
+    border-style: none;
+    border-radius: 5px;
+    width: 40%;
+    height: 50px;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+#conclusao button:hover{
+    box-shadow: 0 0 10px black;
+}
+
+
+
+@media screen and (max-width: 60em){
+
+    body{
+     margin-left: 0;
+     margin-right: 0;
+    }
+
+    #title{
+        font-size: 20px;
+    }
+
+    #grid{
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
+
+    #divisao1{
+        border-style: none;
+        margin-bottom: 10%;
+        text-align: center;
+    }
+
+    #divisao1 input{
+        width: 70%;
+    }
+
+    #divisao1 select{
+        width: 70%;
+    }
+
+    #divisao2{
+        border-top-style: groove;
+    }
+
+    #conclusao button{
+        width: 80%;
+    }
+
+}

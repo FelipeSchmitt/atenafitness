@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/user_info.css">
+    <title>Informações do Usuário</title>
+</head>
+<body>
+
+
+    <nav>
+        <div id="menu">
+            <img src="image/menu.png" onclick="menu_show()">
+            <a href="index.html"><img src="image/home.png" id="home"></a>
+    </div>
+
+    <div id="topics" style="margin-top: -400px;">
+        <a href="portal_login.html"><li>Portal</li></a>
+        <a href="learn.html"><li>Aprendizagem</li></a>
+        <a href="calculators.html"><li>Calculadoras</li></a>
+        <a href="about.html"><li>Sobre</li></a>
+    </div>
+
+    </nav>
+
+
+
+<div id="content" style="margin-top: 0;">
+<div id="title">Informações Completas do Usuário</div>
+    <div id="grid">
+
+    <div id="divisao1">
+
+
+
+        <label for="">Apelido de Usuário:</label>
+        <input type="text">
+
+        <label for="">Nome Completo:</label>
+        <input type="text">
+
+        <label for="">Email:</label>
+        <input type="text" disabled placeholder="felipeonline70@gmail.com" >
+
+        <label for="">Data de Nascimento:</label>
+        <input type="date">
+
+        <label for="">Estado(UF):</label>
+        <select name="" id="UF">
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+        </select>
+
+        <label for="">Cidade:</label>
+        <input type="text">
+
+
+    </div>
+
+
+    <div id="divisao2">
+        
+
+
+        <div id="user_photo"><img src="image/user_icon_black.png" alt=""></div>
+
+        <div id="biografia">
+            <h2>Biografia</h2>
+            <textarea name="" id="" cols="60" rows="10" maxlength="512"></textarea>
+
+        </div>
+    </div>
+        
+    </div>
+
+</div>
+
+<div id="conclusao">
+    <button>Atualizar Cadastro</button>
+</div>
+
+
+
+
+<footer>
+    <p>Licenciado 2021</p>
+</footer>
+
+
+</body>
+<script src="js/menu.js"></script>
+</html>

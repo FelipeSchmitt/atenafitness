@@ -1,0 +1,123 @@
+body{
+    background-image: url(../image/menu_overpage_portal.jpg);
+    background-size: 120%;
+}
+
+#user_icon{
+    display: block;
+}
+#user_icon img{
+    display: block;
+    margin: auto;
+    width: 200px;
+    margin-top: 2.5%;
+    margin-bottom: 1.5%;
+    border-style: solid;
+    border-color: white;
+    border-radius: 50rem;
+    
+}
+
+#display{
+    display: block;
+    margin: auto;
+    background-color: whitesmoke;
+    border-style: solid;
+    border-radius: 5px;
+    width: 540px;
+    height: 360px;
+}
+
+#title{
+    font-size: 28px;
+    text-align: center;
+    color: white;
+    background-color: darkred;
+    margin: 5px;
+}
+
+#section_password{
+    display: grid;
+    grid-template-columns: 1.6fr 0.4fr;
+}
+#campos_acesso{
+    margin: 50px;
+}
+
+#campos_acesso label{
+    display: block;
+    margin: 15px;
+    font-weight: 600;
+    font-family: Helvetica;
+}
+
+#campos_acesso input{
+    background-color: whitesmoke;
+    height: 24px;
+    width: 90%;
+    display: block;
+    margin: auto;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-radius: 5px;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #363636;
+
+}
+
+#campos_acesso input:focus{
+    border-color: orange;
+}
+
+#button{
+  
+}
+
+#button button{
+    width: 260px;
+    height: 35px;
+    font-size: 20px;
+    display: block;
+    margin: auto;
+    background-color: yellow;
+    border-style: none;
+    border-radius: 5px;
+}
+
+#button button:hover{
+    box-shadow: 0 0 8px black;
+    cursor: pointer;
+}
+
+#alternar_portal{
+    float: right;
+    margin: 20px;
+    font-size: 18px;
+    font-family: Helvetica;
+    font-weight: 600;
+}
+
+#alternar_portal a:hover{
+    color: orangered;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 60em){
+
+    #user_icon{
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+    #user_icon img{
+        width: 25%;
+    }
+
+    #display{
+        width: 90%;
+    }
+    
+
+}
