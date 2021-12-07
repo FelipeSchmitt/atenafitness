@@ -59,5 +59,8 @@ h1{
     #learn_session{
         grid-template-columns: 1fr;
     }
+    #learn_session #box{
+        width: 90%;   
+    }
 
 }
