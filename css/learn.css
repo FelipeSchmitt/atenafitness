@@ -58,6 +58,8 @@ h1{
 @media screen and (max-width: 60em){
     #learn_session{
         grid-template-columns: 1fr;
+        margin-left: 5%;
+        margin-right: 5%;
     }
     #learn_session #box{
         width: 90%;   
